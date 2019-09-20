@@ -1,0 +1,27 @@
+public static void tugas2(){
+        int a=0;
+        int nilai[]=new int[]{76,60,90,86};
+        double ratarata=0;
+        System.out.println("Data pada array");
+        for (int i = 0; i < nilai.length; i++) {
+            System.out.print(nilai[i]+"\t");
+            ratarata+=nilai[i];
+            
+    }ratarata/=nilai.length;
+    System.out.println("\n");
+        System.out.println("Nilai rata-rata : " + ratarata);
+        for (int i = 0; i < nilai.length; i++) {
+            if(ratarata<nilai[i]){
+                a++;
+                
+                
+    }       
+        }
+        System.out.println("Siswa yang lulus sebanyak :" + a);
+        for (int i = 0; i < nilai.length; i++) {
+            if(ratarata<nilai[i]){
+                int x=nilai[i];
+                        System.out.println("Siswa bernilai :" +x);
+
+            }
+        }

@@ -1,0 +1,31 @@
+public static void tugas1(){
+        int cari;
+        int a=0;
+        boolean found = false;
+
+        int[]data=new int[]{1,2,5,3,2,1,4,1,7};
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Pilih data :");
+        cari=scan.nextInt();
+        System.out.println("Data pada array");
+        for (int i = 0; i < data.length; i++) {
+            System.out.print(data[i]+"\t");
+           
+        } 
+        for (int i = 0; i < data.length; i++) {        
+            if (cari==data[i]){
+                a++;
+                found=true;
+
+                
+            }
+        if(found==true){
+            System.out.println("Data ditemukan berapa kali ? " + a);
+                            
+
+        }
+        else{
+            System.out.println("\n"+"Tidak ada data yang anda cari");
+        }  
+    }
+        }

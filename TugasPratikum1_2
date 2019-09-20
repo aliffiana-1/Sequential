@@ -1,0 +1,24 @@
+ public static void main(String[] args) {
+      String cari;
+    boolean found = true;
+    String[] data= new String[]{"Alif, Fia, Rosa, Fatihah"};
+    Scanner input = new Scanner(System.in);  
+        System.out.println(" Masukkan data yang ingin dicari");
+        cari = input.nextLine();
+        for (int i = 0; i < data.length; i++) {
+            if (cari == data [i]) {
+                found = true;
+                break;
+                
+            }
+            
+        }
+        if (found == true) {
+            System.out.println("Datanya ditemukannnnnn!!!!");
+        
+        }else{
+            System.out.println("Yahh, Data yang anda cari tidak ditemukan!");
+        }
+    }
+   
+    
